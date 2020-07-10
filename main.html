@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <ul class="logo">
+                <li><a class="brand" href="#">AO</a></li>
+            </ul>
+
+
+            <ul class="right-menu-icon">
+                <li><i class="fas fa-ellipsis-h fa-2x nav-icon"></i></li>
+            </ul>
+
+            <ul class="right-menu">
+                <li><a href="#">Color</a></li>
+                <li><a href="#">Manual</a></li>
+                <li><a href="#">How To</a></li>
+                <li><a href="#">Useful Links</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section class="info">
+                <div>
+                    <h2 class="info-title">Design for the color impaired</h2>
+                    <p class="info-content">
+                        Lorom is a free color blindness simulator for Windows, Mac and Linux. It takes<br> the guesswork out of designing
+                        for color blindness by showing you in real time what<br> people with common color vision impairments will see.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div class="os-table">
+            <div class="row">
+                <div class="table">
+                    <i class="fab fa-apple fa-5x"></i>
+                    <a class="os-links" href="#">Download for Mac</a>
+                    <p>No requirements</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table">
+                    <i class="fab fa-linux fa-5x"></i>
+                    <a class="os-links popular" href="#">Download for Linux</a>
+                    <p>Requires java 6 or higher</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table">
+                    <i class="fab fa-windows fa-5x"></i>
+                    <a class="os-links" href="#">Download for Windows</a>
+                    <p>Requires java 6 or higher</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-row">
+                <h3 class="heading">
+                    About
+                </h3>
+                <p class="info-paragraph">
+                    Development Aadhi, Monash University, <br>
+                    Australia ideas, testing and icon: Aadhi <br>
+                    Lorom ipsum, India.
+                </p>
+            </div>
+
+
+            <div class="footer-row">
+                <h3 class="heading">
+                    Feedback
+                </h3>
+                <p class="info-paragraph">
+                    Lorom is a work in progress and will <br>
+                    improve with time and your input. Please share <br>
+                    your Lorom testimonial with us and send <br>
+                    us an email.
+                </p>
+            </div>
+
+            <div class="footer-row">
+                <h3 class="heading">
+                    Source
+                </h3>
+                <p class="info-paragraph">
+                    Loreom is Open Source, available on Github <br>
+                    for Mac and Windows.
+                </p>
+            </div> 
+        </div>
+
+        <div class="copyright">
+            <p>
+                <span class="copyright-symbol">&#169;</span>
+                2020-2021 by Aadhi, Lorom ipsum, India. Dummy Website for practice.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelector(".nav-icon").addEventListener("click", function() {
+            document.querySelector(".right-menu").classList.toggle("show");
+        });
+    </script>
+
+</body>
+</html>
